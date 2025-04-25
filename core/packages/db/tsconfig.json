@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "@haxurn-core/common/tsconfig.base.json",
+	"include": ["src/**/*.ts"],
+	"compilerOptions": {
+		"outDir": "dist",
+		"baseUrl": ".",
+		"paths": {
+			"@haxurn-core/config": ["../config/src"]
+		}
+	}
+}

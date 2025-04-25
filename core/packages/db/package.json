@@ -1,0 +1,54 @@
+{
+  "name": "@haxurn-core/db",
+  "version": "1.0.0",
+  "description": "Database package for Haxurn core, providing ORM and migration utilities using Drizzle ORM and SQLite.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "haxurn",
+    "database",
+    "orm",
+    "drizzle",
+    "sqlite",
+    "migration",
+    "typescript"
+  ],
+  "author": "Samson Tesfaye <samitesfaye726@gmail.com>",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haxurn/haxurn-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haxurn/haxurn-core/issues"
+  },
+  "homepage": "https://github.com/haxurn/haxurn-core#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "generate": "drizzle-kit generate",
+    "studio": "dotenv -e ../../.env drizzle-kit studio",
+    "migrate": "tsx src/migrate.ts",
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
+    "dotenv": "^16.5.0",
+    "drizzle-kit": "^0.31.0",
+    "drizzle-orm": "^0.43.1",
+    "pg": "^8.15.6",
+    "tsx": "^4.19.3"
+  },
+  "devDependencies": {
+    "@haxurn-core/common": "workspace:*",
+    "@haxurn-core/config": "workspace:*",
+    "@types/pg": "^8.11.14"
+  }
+}
