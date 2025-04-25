@@ -1,0 +1,26 @@
+{
+	"version": "0.2",
+	"ignorePaths": [
+		"node_modules",
+		"dist",
+		"pnpm-lock.yaml",
+		"coverage",
+		"**/*.min.js"
+	],
+	"ignoreWords": [
+		"axova",
+		"PostGIS",
+		"drizzle",
+		"Fastify",
+		"Expo",
+		"Zustand",
+		"nx",
+		"pnpm",
+		"taze",
+		"Millis",
+		"otps",
+		"bumpp",
+		"paralleldrive"
+	],
+	"words": ["typebox"]
+}

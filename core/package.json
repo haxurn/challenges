@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json.schemastore.org/package.json",
+	"name": "@haxurn-core/root",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"description": "The root package for the Haxurn Core monorepo.",
+	"packageManager": "pnpm@10.9.0",
+	"author": "Haxurn(Samson Tesfaye)",
+	"license": "MIT",
+	"scripts": {
+		"build": "turbo --filter \"./packages/*\" build",
+		"dev": "turbo --filter \"./packages/*\" dev",
+		"dev:dts": "turbo --filter \"./packages/*\" dev:dts",
+		"clean": "turbo --filter \"./packages/*\" clean && rm -rf node_modules",
+		"format": "biome format . --write",
+		"lint": "biome check .",
+		"lint:fix": "biome check . --write",
+		"bump": "bumpp",
+		"test": "turbo --filter \"./packages/*\" test",
+		"typecheck": "turbo --filter \"./packages/*\" typecheck"
+	},
+	"dependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@commitlint/config-conventional": "^19.8.0",
+		"@types/node": "^22.15.2",
+		"bumpp": "^10.1.0",
+		"chalk": "^5.4.1",
+		"cross-env": "^7.0.3",
+		"dotenv-cli": "^8.0.0",
+		"tinyglobby": "^0.2.13",
+		"tsup": "^8.4.0",
+		"turbo": "^2.5.2",
+		"typescript": "^5.8.3-rc"
+	}
+}
