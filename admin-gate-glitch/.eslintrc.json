@@ -1,0 +1,16 @@
+{
+  "extends": ["next"],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "overrides": [
+    {
+      "files": ["next.config.mjs", "postcss.config.mjs"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "sourceType": "module",
+        "project": null
+      }
+    }
+  ]
+}
