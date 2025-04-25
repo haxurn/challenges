@@ -1,0 +1,124 @@
+{
+  "$schema": "https://cdn.statically.io/gh/nguyenngoclongdev/cdn/main/schema/v10/terminal-keeper.json",
+  "theme": "tribe",
+  "active": "development",
+  "activateOnStartup": true,
+  "keepExistingTerminals": false,
+  "sessions": {
+    "default": [
+      {
+        "name": "Terminal",
+        "icon": "terminal-bash",
+        "color": "terminal.ansiBlue",
+        "autoExecuteCommands": true,
+        "commands": [
+          "cd ~/dev/terminal-keeper"
+        ]
+      }
+    ],
+    "development": [
+      [
+        {
+          "name": "Hello",
+          "icon": "suggest-more-info",
+          "color": "terminal.ansiBrightGreen",
+          "autoExecuteCommands": true,
+          "commands": [
+            "echo 'Hello World'"
+          ]
+        }
+      ],
+      [
+        {
+          "name": "app:package",
+          "icon": "terminal-bash",
+          "color": "terminal.ansiBlue",
+          "commands": []
+        },
+        {
+          "name": "app:dev",
+          "icon": "terminal-bash",
+          "color": "terminal.ansiBlue",
+          "commands": []
+        },
+        {
+          "name": "app:build",
+          "icon": "terminal-bash",
+          "color": "terminal.ansiBlue",
+          "commands": []
+        }
+      ],
+      [
+        {
+          "name": "api:package",
+          "icon": "rocket",
+          "color": "terminal.ansiMagenta",
+          "commands": []
+        },
+        {
+          "name": "api:dev",
+          "icon": "rocket",
+          "color": "terminal.ansiMagenta",
+          "commands": []
+        },
+        {
+          "name": "api:build",
+          "icon": "rocket",
+          "color": "terminal.ansiMagenta",
+          "commands": []
+        }
+      ],
+      [
+        {
+          "name": "db:generate",
+          "icon": "database",
+          "color": "terminal.ansiBrightYellow",
+          "commands": []
+        },
+        {
+          "name": "db:migrate",
+          "icon": "database",
+          "color": "terminal.ansiBrightYellow",
+          "commands": []
+        },
+        {
+          "name": "db:studio",
+          "icon": "database",
+          "color": "terminal.ansiBrightYellow",
+          "commands": []
+        }
+      ],
+      [
+        {
+          "name": "test:unit",
+          "icon": "beaker",
+          "color": "terminal.ansiBrightRed",
+          "commands": []
+        },
+        {
+          "name": "test:e2e",
+          "icon": "beaker",
+          "color": "terminal.ansiBrightRed",
+          "commands": []
+        },
+        {
+          "name": "test:integration",
+          "icon": "beaker",
+          "color": "terminal.ansiBrightRed",
+          "commands": []
+        }
+      ],
+      [
+        {
+          "name": "WSL",
+          "icon": "terminal-linux",
+          "color": "terminal.ansiCyan",
+          "autoExecuteCommands": true,
+          "commands": [
+            "kali"
+          ]
+        }
+      ]
+    ]
+  }
+}
