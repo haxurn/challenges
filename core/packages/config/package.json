@@ -1,0 +1,35 @@
+{
+  "name": "@haxurn-core/config",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "haxurn"
+  ],
+  "author": "Samson Tesfaye <samitesfaye726@gmail.com>",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haxurn/haxurn-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haxurn/haxurn-core/issues"
+  },
+  "homepage": "https://github.com/haxurn/haxurn-core#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "@haxurn-core/common": "workspace:*",
+    "dotenv": "^16.5.0",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@haxurn-core/common": "workspace:*"
+  }
+}
