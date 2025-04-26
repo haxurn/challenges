@@ -1,0 +1,16 @@
+{
+  "name": "@haxurn-core/api",
+  "private": true,
+  "version": "0.0.1",
+  "author": "Haxurn (Samson Tesfaye)",
+  "description": "API for Haxurn Core",
+  "scripts": {
+    "dev": "dotenv -e ../../.env -- tsx watch src/index.ts",
+    "build": "tsup"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "src/index/ts"
+}
