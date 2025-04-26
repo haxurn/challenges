@@ -9,16 +9,18 @@
 	"author": "Haxurn(Samson Tesfaye)",
 	"license": "MIT",
 	"scripts": {
-		"build": "turbo --filter \"./packages/*\" build",
-		"dev": "turbo --filter \"./packages/*\" dev",
+		"build": "turbo --filter \"./packages/*\" build && turbo --filter \"./apps/*\" build",
+		"dev": "turbo --filter \"./packages/*\" dev && turbo --filter \"./apps/*\" dev",
+		"dev:api": "dotenv -e ./apps/api/.env -- tsx watch ./apps/api/src/index.ts",
+		"dev:bot": "dotenv -e ./apps/bot/.env -- tsx watch ./apps/bot/src/index.ts",
 		"dev:dts": "turbo --filter \"./packages/*\" dev:dts",
-		"clean": "turbo --filter \"./packages/*\" clean && rm -rf node_modules",
+		"clean": "turbo --filter \"./packages/*\" clean && turbo --filter \"./apps/*\" clean && rm -rf node_modules",
 		"format": "biome format . --write",
 		"lint": "biome check .",
 		"lint:fix": "biome check . --write",
 		"bump": "bumpp",
-		"test": "turbo --filter \"./packages/*\" test",
-		"typecheck": "turbo --filter \"./packages/*\" typecheck"
+		"test": "turbo --filter \"./packages/*\" test && turbo --filter \"./apps/*\" test",
+		"typecheck": "turbo --filter \"./packages/*\" typecheck && turbo --filter \"./apps/*\" typecheck"
 	},
 	"dependencies": {
 		"@biomejs/biome": "^1.9.4",
@@ -27,6 +29,7 @@
 		"bumpp": "^10.1.0",
 		"chalk": "^5.4.1",
 		"cross-env": "^7.0.3",
+		"dotenv": "^16.5.0",
 		"dotenv-cli": "^8.0.0",
 		"tinyglobby": "^0.2.13",
 		"tsup": "^8.4.0",
