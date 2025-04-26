@@ -1,5 +1,5 @@
 import { createId } from "@paralleldrive/cuid2";
-import { integer, text } from "drizzle-orm/pg-core"; // Updated import
+import { integer, text } from "drizzle-orm/pg-core"; 
 import { user } from "./user";
 
 export function boolean(name: string) {
